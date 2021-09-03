@@ -1,0 +1,15 @@
+doctype html 
+html
+  head 
+    title Hellooo All 
+  body 
+    table(border=2)
+        thead 
+            th Name
+            th Email
+            th Industry
+        each val in allemployee
+            tr 
+                td #{val.name}
+                td #{val.email}
+                td #{val.indus}
