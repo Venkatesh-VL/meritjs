@@ -1,0 +1,13 @@
+html    
+    body 
+        form(action= `/update/${id}` method="POST" enctype="multipart/form-data")
+            label ID 
+            input(type="text" value=`${id}` name="id")
+            label Phone
+            input(type="number" name="pno")
+            br
+            label Email
+            input(type="text" name="email")
+            label Picture 
+            input(type="file", name="propic")
+            button Update Contact
